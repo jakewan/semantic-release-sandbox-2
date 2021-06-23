@@ -16,7 +16,7 @@ jobs:
           node-version: "14.17.1"
       - run: npm ci
       - run: |
-          echo "Github ref: ${{ env.GITHUB_REF }}"
+          echo "Github ref: ${{ github.ref }}"
       # - run: npx semantic-release@17.4.4 --dry-run
       #   env:
       #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
