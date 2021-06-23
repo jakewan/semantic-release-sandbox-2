@@ -15,3 +15,5 @@ jobs:
         with:
           node-version: "14.17.1"
       - run: npx semantic-release@17.4.4 --dry-run
+        env:
+          DEBUG: semantic-release:*
