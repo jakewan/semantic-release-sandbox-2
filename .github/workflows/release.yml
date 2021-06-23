@@ -17,4 +17,5 @@ jobs:
       - run: npm ci
       - run: npx semantic-release@17.4.4
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DEBUG: semantic-release:*
