@@ -14,8 +14,4 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: "14.17.1"
-      - name: What Node?
-        run: |
-          node --version
-          which npx
       - run: npx semantic-release@17.4.4 --dry-run
