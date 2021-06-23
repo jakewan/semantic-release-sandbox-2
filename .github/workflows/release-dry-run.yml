@@ -1,0 +1,13 @@
+name: Release - Dry Run
+
+on:
+  push:
+    branches-ignore:
+      - v[0-9]+
+
+jobs:
+  release-dry-run:
+    name: Release - Dry Run
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
